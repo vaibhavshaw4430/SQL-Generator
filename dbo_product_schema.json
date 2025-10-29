@@ -1,0 +1,7 @@
+{ 
+	"DBO.PRODUCT": 
+		{ 
+			"description": "Stores all product information of Mc Graw Hill. Key Columns : PROJECT_NUMBER, ISBN, EBS_FULL_TITLE, ICC_NAME, ACTUAL_PUBLICATION_DATE, ADD_DATE, PRODUCT_BRANDING, RECORD_MODIFICATION_DATE, LIST_PRICE, NET_PRICE. Project Number is like the primary key, ISBN represents the ISBN number of each product that Mc Graw Hill sells and other columns are the product's attributes, where ICC means an Item Class to which this product will belong to and there are dates column representing timestamps of actions", 
+		"business_terms": ["product", "item", "isbn","item_number","item_class","creation","modified"] 
+		} 
+}
