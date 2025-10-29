@@ -3,7 +3,8 @@ import google.generativeai as genai
 import re
 import streamlit as st
 
-genai.configure(api_key="AIzaSyBg9W6ucT0VNoBVEIQdlQxf11rp1TeQxJg")
+api_key = st.secrets["google_api_key"]
+genai.configure(api_key=api_key)
 
 with open('dbo_product_schema.json', "r") as f:
   metadata = json.load(f)
@@ -51,4 +52,5 @@ if st.button("Generate SQL"):
                 st.success("✅ SQL generated successfully!")
 
             except Exception as e:
+
                 st.error(f"Error: {str(e)}")
